@@ -15,7 +15,7 @@ const getDistDir = () => DEBUG ? "dist_debug" : "dist_release";
 const shaderMinifier = process.env.SHADER_MINIFIER_CMD;
 
 gulp.task('set_prod', cb => {
-    DEBUG = false;
+    DEBUG = true;
     cb()
 });
 
